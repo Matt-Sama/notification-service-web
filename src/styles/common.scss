@@ -1,0 +1,16 @@
+
+.main-contain{
+    height: calc(100vh - 110px);
+    margin: 30px;
+    padding-right: calc(100vw - 100% - $sideBarWidth);
+}
+
+::v-deep .el-table thead tr th{
+    background: $commonBgColor;
+    color: #fff
+  }
+
+.commonButton{
+    background: $commonBgColor;
+    color: #fff;
+}
