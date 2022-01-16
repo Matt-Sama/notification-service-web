@@ -1,12 +1,5 @@
 <template>
     <div class="contain">
-        <div class="contain-button-wrapper">
-            <el-button>全部</el-button>
-            <el-button>待发送</el-button>
-            <el-button>发送成功</el-button>
-            <el-button>发送失败</el-button>
-            <el-button>拦截</el-button>
-        </div>
         <div class="contain-table-wrapper">
             <el-table fit height="100%">
                 <el-table-column align="center" prop="" label="应用发送时间"></el-table-column>
@@ -37,19 +30,16 @@
 
 <script>
     export default {
-        name: 'commonTable'
+        
     }
 </script>
 
 <style lang="scss" scoped>
     .contain{
         height: 100%;
-        &-button-wrapper{
-            margin: 0 0 5px 0;
-        }
         &-table-wrapper{
             margin: 5px 0 0 0;
-            height: calc(100% - 85px);
+            height: calc(100% - 30px);
         }
         &-pagination-wrapper{
             margin-top: 10px;

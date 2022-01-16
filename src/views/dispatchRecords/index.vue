@@ -10,10 +10,11 @@
           <el-option label="天庆空分智慧平台"></el-option>
           <el-option label="兴澄特钢智慧平台"></el-option>
         </el-select>
-        <span class=option-title>统计时段：</span>
+        <span class="commonTitle">统计时段：</span>
         <el-select class="option-hour-select" size="small">
           <el-option label="小时"></el-option>
         </el-select>
+        <span class="commonTitle">时间范围：</span>
         <el-date-picker type="datetimerange" range-separator="~" start-placeholder="开始时间" end-placeholder="结束时间" size="small"></el-date-picker>
       </div>
     </div>
@@ -25,10 +26,10 @@
       <el-card>
         <el-tabs>
           <el-tab-pane label="短信">
-            <common-table></common-table>
+            <common-tabs></common-tabs>
           </el-tab-pane>
           <el-tab-pane label="邮件">
-            <common-table></common-table>
+            <common-tabs></common-tabs>
           </el-tab-pane>
         </el-tabs>
       </el-card>
@@ -41,12 +42,12 @@
 import { mapGetters } from 'vuex'
 import HeaderLayout from '@/components/HeaderLayout'
 import trendOption from '@/charts/dispatchRecords/trend-echart'
-import CommonTable from './components/commonTable.vue'
+import CommonTabs from './components/commonTabs.vue'
 export default {
   name: 'dispatchRecords',
   components: {
     HeaderLayout,
-    CommonTable
+    CommonTabs
   },
   computed: {
     ...mapGetters([
@@ -73,10 +74,6 @@ export default {
     margin-top: -10px;
     display: flex;
     align-items: center;
-  }
-  &-title{
-    margin: 0 5px 0 10px;
-    white-space: nowrap;
   }
   &-hour-select{
     margin-right: 5px;

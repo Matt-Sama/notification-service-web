@@ -45,7 +45,7 @@ export default {
                     'insertLink',
                     'editLink',
                     'fontSize',
-                    'fontFamily'
+                    'fontFamily',
                 ]
             },
             editorConfig: {

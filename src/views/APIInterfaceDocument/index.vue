@@ -1,8 +1,11 @@
 <template>
-  <div class="dashboard-container">
+  <div class="main-contain">
     <header-layout>
       <template slot="header">API接口文档</template>
     </header-layout>
+    <div class="card-wrapper">
+      <el-card></el-card>
+    </div>
   </div>
 </template>
 
@@ -23,13 +26,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.dashboard {
-  &-container {
-    margin: 30px;
-  }
-  &-text {
-    font-size: 30px;
-    line-height: 46px;
+.card{
+  &-wrapper{
+    height: 100%;
+    .el-card{
+      height: calc(100% - 30px);
+    }
   }
 }
 </style>

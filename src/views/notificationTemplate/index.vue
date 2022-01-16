@@ -6,7 +6,7 @@
     <div class="main-body">
      <el-card>
        <el-button class="main-button" @click="handleDrawer">新增</el-button>
-        <el-tabs>
+        <el-tabs type="border-card">
           <el-tab-pane label="短信">
             <template-table :placeholder="'可输入模板ID、模板名称、消息内容等关键字查询'"></template-table>
           </el-tab-pane>
@@ -79,7 +79,7 @@ export default {
       .el-tabs{
         height: 100%;
         ::v-deep .el-tabs__content{
-          height: calc(100% - 55px);
+          height: calc(100% - 30px);
         }
       }
       ::v-deep .el-tab-pane{
@@ -89,8 +89,8 @@ export default {
   }
   &-button{
     position:absolute;
-    top:10px;
-    right:10px;
+    top:20px;
+    right:20px;
     z-index: 99;
   }
 }
@@ -107,8 +107,5 @@ export default {
 }
 ::v-deep .el-drawer__body{
   margin:0 30px 30px 30px
-}
-::v-deep .el-divider{
-  margin: -10px 0 20px 0;
 }
 </style>
